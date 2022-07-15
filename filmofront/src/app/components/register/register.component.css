@@ -1,0 +1,28 @@
+.red{
+color: #eb4141;
+}
+.register_container {
+    margin-right: 30%;
+    margin-left: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    *zoom: 1; }
+    .register_container:after {
+      content: " ";
+      clear: both;
+      display: block;
+      overflow: hidden;
+      height: 0; }
+    @media (min-width: 768px) {
+      .register_container {
+        width: 500px; } }
+    @media (min-width: 992px) {
+      .register_container {
+        width: 458px; } }
+    @media (min-width: 1200px) {
+      .register_container {
+        width: 458px; } }
+     .register_container {
+          background: white;
+          border-radius: 5px;
+          padding: 30px; }

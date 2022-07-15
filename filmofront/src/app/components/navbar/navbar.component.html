@@ -1,0 +1,28 @@
+<header class="site-header">
+    <div class="container">
+        <a routerLink="" id="branding">
+            <img width="50px" height="50px" src="./assets/film.svg" alt="" class="logo">
+            <div class="logo-copy">
+                <h1 class="site-title">شیلیمو</h1>
+                <small class="site-description">فیلم های برتر</small>
+            </div>
+        </a> <!-- #branding -->
+
+        <div class="main-navigation">
+            <ul class="menu">
+                <li *ngIf="loggedIn()" routerLinkActive="current-menu-item" class="menu-item "><a routerLink="dashboard" >داشبرد</a></li>
+                <li *ngIf="loggedIn()" routerLinkActive="current-menu-item" class="menu-item "><a routerLink="buyaccount" >خرید اشتراک</a></li>
+                <li *ngIf="loggedIn()" (click)="logout()" class="menu-item logoutt"><a  >خروج</a></li>
+                
+                <li *ngIf="!loggedIn()" routerLinkActive="current-menu-item" class="menu-item"><a routerLink="register">ثبت نام</a></li>
+                <li *ngIf="!loggedIn()" routerLinkActive="current-menu-item" class="menu-item"><a routerLink="login">ورود</a></li>
+            </ul> 
+            <form *ngIf="loggedIn()" class="search">
+                <input type="text" placeholder="جستجو...">
+                
+            </form>
+        </div> 
+
+        <div class="mobile-navigation"></div>
+    </div>
+</header>

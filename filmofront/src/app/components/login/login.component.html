@@ -1,0 +1,42 @@
+
+<div class="login_container">
+  <div class="page">
+    <div class="breadcrumbs">
+      <a routerLink="">صفحه اصلی</a>
+      <span>ورود</span>
+    </div>
+
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12">
+          
+          
+          <div class="contact-form">
+            <form  #loginForm="ngForm" (ngSubmit)="login()" >
+              <div >
+        
+                <div>
+                  <label for="username">ایمیل</label>
+                  <input class="username" type="text" required placeholder="نام کاربری را وارد کنید." [(ngModel)]="model.username" name="username" required>
+                </div>
+        
+                <div>
+                  <label for="password" >پسورد</label>
+                  <input class="message" [(ngModel)]="model.password" name="password" type="password" required placeholder="رمز را وارد کنید" required>
+                </div>
+                <div class="mybtn" >
+                  <button [disabled]="!loginForm.valid"  type="submit">ورود</button>
+              </div>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+

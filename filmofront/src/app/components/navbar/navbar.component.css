@@ -1,0 +1,22 @@
+.logoutt{
+    cursor: pointer;
+}
+.search {
+    display: inline-block;
+    vertical-align: middle; }
+.search input {
+    opacity: 1;
+    background-color: #f0f0f0;
+    border: none;
+    border-left: 1px solid #eeeeef;
+    border-radius: 0;
+    font-family: inherit;
+    font-weight: 300;
+    width: 200px;
+    visibility: visible;
+    -webkit-transition: .3s ease;
+            transition: .3s ease;
+    padding: 10px 0; 
+}
+
+

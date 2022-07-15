@@ -1,0 +1,32 @@
+.login_container {
+    margin-right: 30%;
+    margin-left: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+    *zoom: 1; 
+
+    background: white;
+    border-radius: 5px;
+    padding: 30px; 
+    
+    /* backdrop-filter: blur(1px);
+    filter: blur(8px);
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); */
+
+  }
+    .login_container:after {
+      content: " ";
+      clear: both;
+      display: block;
+      overflow: hidden;
+      height: 0; }
+    @media (min-width: 768px) {
+      .login_container {
+        width: 500px; } }
+    @media (min-width: 992px) {
+      .login_container {
+        width: 458px; } }
+    @media (min-width: 1200px) {
+      .login_container {
+        width: 458px; } 
+      }
